@@ -1,21 +1,37 @@
-<h1>Welcome to the Weather App!</h1>
+<body>
+    <section id="body-container">
+        <header>
+            <h1>Weather App!</h1>
+        </header>
 
-<form id="location-form">
-    <input id="locationInput" type="text">
-    <label for="locationInput">Location</label>
-    <button id="searcht-button" type="submit">Search</button>
-</form>
+        <main>
+            <form id="location-form">
+                <input id="locationInput" type="text">
+                <button id="searcht-button" type="submit">Search</button>
+            </form>
 
-<div id="display">
-    <!-- template will be displayed here -->
-</div>
+            <div id="display">
+                <!-- template will be displayed here -->
+            </div>
+        </main>
+    </section>
+</body>
 
 <template id="template">
-    <h1 id="city-name"></h1>
-    <p id="temperature"></p>
-    <p id="min-temp"></p>
-    <p id="max-temp"></p>
-    <ul id="forecast-list">
-        <!-- list items go here -->
-    </ul>
+    <div id="template-container">
+        <h1 id="city-name"></h1>
+        <span id="span"></span>
+        <p id="temperature"></p>
+        <div id="min-max-container">
+            <p id="min-temp"></p>
+            <p id="max-temp"></p>
+        </div>
+        <details>
+            <summary>15 days average temperature:</summary>
+            <ul id="forecast-list">
+                <!-- list items go here -->
+            </ul>
+        </details>
+
+    </div>
 </template>

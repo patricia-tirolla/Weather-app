@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400');
+
+:root {
+    --shadow: 2px 2px 10px rgb(197, 194, 194);
+    --shadow-hover: 2px 2px 10px rgb(116, 116, 116);
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+    font-family: 'Roboto', sans-serif;
+
+    #body-container {
+        background-color: white;
+        margin: auto;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: var(--shadow);
+
+        header {
+            margin: 0;
+
+            h1 {
+                margin: 0;
+            }
+        }
+
+        ;
+
+        main {
+            button {
+                background-color: rgb(0, 157, 255);
+                color: white;
+                border: 1px solid gray;
+                border-radius: 3px;
+                padding: 3px 8px;
+            }
+        }
+    }
+
+}
+
+
+#template-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+
+    #city-name {
+        align-items: center;
+        margin: 0;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    #temperature {
+        margin: 0;
+        font-size: 3rem;
+    }
+
+    #min-max-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+        padding: 0 10px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    details {
+        margin: 0;
+
+        summary {
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 8px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style: none;
+                padding: 2px;
+            }
+        }
+    }
+}
+
+/* hover */
+button:hover {
+    cursor: pointer;
+    box-shadow: var(--shadow-hover);
+}
+
+summary:hover {
+    cursor: pointer;
+    box-shadow: var(--shadow-hover);
+}
+
+#body-container:hover {
+    box-shadow: var(--shadow-hover);
+}
